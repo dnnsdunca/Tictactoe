@@ -31,6 +31,14 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
+                  - name: Download a Build Artifact
+  uses: actions/download-artifact@v2.1.1
+  with:
+    # Artifact name
+    name: # optional
+    # Destination path
+    path: # optional
+          
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
